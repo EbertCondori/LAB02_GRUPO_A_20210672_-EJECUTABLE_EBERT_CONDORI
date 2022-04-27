@@ -1,0 +1,26 @@
+/*
+10. Escribir un programa que pida al usuario una palabra y luego muestre por pantalla una a
+una las letras de la palabra introducida empezando por la última.
+*/
+
+#include <iostream>
+using namespace std;
+void invierte(string cadena)
+{
+if(cadena.size()==1)
+{
+cout<<cadena[0];
+return;
+}
+cout<<cadena[cadena.size()-1];
+invierte(cadena.substr(0,cadena.size()-1));
+}
+int main()
+{
+string c;
+cout<<"palabra ";
+cin>>c;
+cout<<"palabra invertida es: ";
+invierte(c);
+return 0;
+}
