@@ -1,0 +1,15 @@
+/*
+8. Escribir un programa que genere la tabla de multiplicar de un número introducido por el
+teclado.
+*/
+
+#include <iostream>
+using namespace std;
+int main(int argc, char *argv[]) {
+int a;
+cout<<"ingrese la tabla del numero deseado"<<endl;
+cin>>a;
+for(int i=1;i<13;i++)
+cout<<i<<" * "<<a<<" = "<<i*a<<endl;
+return 0;
+}
