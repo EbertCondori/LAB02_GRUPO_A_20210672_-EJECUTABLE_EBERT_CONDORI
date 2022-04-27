@@ -1,0 +1,29 @@
+/*
+4. Escriba un código que solicite ingresar dos números 𝑥 y 𝑦, tal que 𝑥 < 𝑦. Muestre todos los
+números primos que se encuentren entre el rango de valores, de no encontrarse, mostrar el
+primo más cercano a 𝑥 o 𝑦.
+*/
+
+#include <iostream>
+using namespace std;
+int divi(int a){
+int cont;
+int b=0;
+for(int i=1;i<a;i++){
+cont=a%i;
+if(cont==0){
+b++;
+}
+}
+return b;
+}
+int main(int argc, char *argv[]) {
+int a,b;
+cout<<"INGRESE 2 NUMEROS "<<endl;
+cin>>a>>b;
+for(int i=a;i<b;i++){
+if(divi(i)==1)
+cout<<i<<" ";
+}
+return 0;
+}
