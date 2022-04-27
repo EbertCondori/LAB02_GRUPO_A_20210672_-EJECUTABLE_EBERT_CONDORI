@@ -2,6 +2,9 @@
 2. Calcule los primeros 50 números primos y muestre el resultado en pantalla.
 */
 
+#include <iostream>
+using namespace std;
+
 int divi(int a){
 int cont;
 int b=0;
